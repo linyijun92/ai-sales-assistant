@@ -151,6 +151,42 @@ flutter run -d chrome
 
 ---
 
+## 🌐 Vercel 部署
+
+### 自动部署
+
+项目已配置 Vercel，推送到 GitHub 后会自动部署。
+
+### 手动部署
+
+1. 在 [Vercel](https://vercel.com) 导入 GitHub 仓库
+2. 配置环境变量
+3. 点击 Deploy
+
+### 环境变量配置
+
+在 Vercel 项目设置中添加以下环境变量：
+
+```
+NODE_ENV=production
+PORT=3000
+JWT_SECRET=your_jwt_secret_key_here
+CRM_API_URL=https://your-crm-system.com/api
+CRM_API_KEY=your_crm_api_key
+SPEECH_API_KEY=your_speech_api_key
+INTENT_API_KEY=your_intent_api_key
+```
+
+### 部署后测试
+
+部署完成后，访问 `/health` 端点测试服务状态：
+
+```bash
+curl https://your-app.vercel.app/health
+```
+
+---
+
 ## 🧪 测试
 
 ### 后端测试

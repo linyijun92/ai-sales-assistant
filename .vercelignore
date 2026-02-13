@@ -1,0 +1,26 @@
+# 移动端项目
+src/mobile/
+tests/
+docs/
+.claude/
+*.md
+!README.md
+
+# 开发配置
+.vscode/
+.idea/
+
+# 测试文件
+*.test.js
+*.spec.js
+jest.config.js
+.eslintrc.*
+
+# 日志
+logs/
+*.log
+
+# 环境
+.env
+.env.local
+.env.*.local
